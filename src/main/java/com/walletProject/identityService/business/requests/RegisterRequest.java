@@ -16,12 +16,12 @@ public class RegisterRequest {
     @Size(min = 3, max = 50, message = "Kullanıcı adı 3 ile 50 karakter arasında olmalıdır")
 	private String username;
 	
-	@NotBlank(message = "E-posta boş bırakılamaz")
-    @Email(message = "Geçerli bir e-posta adresi giriniz")
+	@NotBlank(message = "Şifre boş bırakılamaz")
+	@Size(min = 6, message = "Şifre en az 6 karakter olmalıdır")
 	private String password;
 	
-	@NotBlank(message = "Şifre boş bırakılamaz")
-    @Size(min = 6, message = "Şifre en az 6 karakter olmalıdır")
+    @NotBlank(message = "E-posta boş bırakılamaz")
+    @Email(message = "Geçerli bir e-posta adresi giriniz")
 	private String email;
 	
 	

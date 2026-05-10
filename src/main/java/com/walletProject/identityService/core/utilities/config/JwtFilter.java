@@ -24,8 +24,9 @@ import lombok.RequiredArgsConstructor;
 @Component
 public class JwtFilter extends OncePerRequestFilter {
 	private final JwtService jwtService;
-	ApplicationContext context;
+	private final ApplicationContext context;
 	
+	//jwt'nin süresini artır
 	@Override
 	protected void doFilterInternal(HttpServletRequest request, HttpServletResponse response, FilterChain filterChain)
 			throws ServletException, IOException {

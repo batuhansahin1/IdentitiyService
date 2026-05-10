@@ -10,8 +10,8 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class LoginRequest {
 
-	@NotBlank(message = "Kullanıcı adı veya e-posta boş bırakılamaz")
-	private String usernameOrEmail;
+	@NotBlank(message = "Kullanıcı adı  boş bırakılamaz")
+	private String username;
 
 	@NotBlank(message = "Şifre boş bırakılamaz")
 	private String password;
