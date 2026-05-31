@@ -11,12 +11,14 @@ import com.walletProject.identityService.models.entities.Users;
 public interface UserRepository extends JpaRepository<Users,Long> {
 
 	
-	Optional<Users> findByUsername(String username);
+	
  
 	Optional<Users> findByEmail(String email);
 
-	boolean existsByUsername(String username);
+    boolean existsByTcKimlik(String tcKimlik);
 	
 	boolean existsByEmail(String email);
+
+	Optional<Users> findByTcKimlik(String tcKimlik);
 
 }

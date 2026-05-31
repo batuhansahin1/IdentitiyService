@@ -15,9 +15,9 @@ import lombok.Setter;
 @Setter
 public class GetAllUserResponse {
 
-	private String username;
+	//private String username;
 	private String email;
 	private LocalDateTime updatedAt;
 	private Role role;
-	
+	 
 }

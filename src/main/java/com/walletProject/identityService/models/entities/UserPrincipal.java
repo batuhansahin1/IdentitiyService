@@ -27,7 +27,7 @@ public class UserPrincipal implements UserDetails {
 	@Override
 	public String getUsername() {
 		// TODO Auto-generated method stub
-		return user.get().getUsername();
+		return user.get().getTcKimlik();
 	}
 
 

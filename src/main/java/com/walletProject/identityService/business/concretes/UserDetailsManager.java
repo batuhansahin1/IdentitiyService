@@ -19,8 +19,8 @@ public class UserDetailsManager implements UserDetailsService {
 
 	private final UserRepository userRepository;
 	@Override
-	public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
-		Optional<Users> user= userRepository.findByUsername(username);
+	public UserDetails loadUserByUsername(String tcKimlik) throws UsernameNotFoundException {
+		Optional<Users> user= userRepository.findByTcKimlik(tcKimlik);
 		if(user.isEmpty()) {
 			System.out.println("Kullanıcı bulunamadı");
 			throw new UsernameNotFoundException("Kullanıcı adı bulunamadı");
